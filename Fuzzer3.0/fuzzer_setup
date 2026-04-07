@@ -1,0 +1,7 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/usr/bin/krita
+AFL_CUSTOM_INFO_PROGRAM_ARGV=--nosplash --template /home/vboxuser/Pictures/template.kra
+AFL_CUSTOM_INFO_OUT=out/default
+AFL_IGNORE_PROBLEMS=1
+# command line:
+'./afl-fuzz' '-K' './gui_utils/atspi_clicks.py' '-t' '100000' '-i' 'in' '-o' 'out' '-m' 'none' '--' '/usr/bin/krita' '--nosplash' '--template' '/home/vboxuser/Pictures/template.kra'
