@@ -1,0 +1,4 @@
+/usr/bin/krita
+--nosplash
+--template
+/home/vboxuser/Pictures/template.kra
